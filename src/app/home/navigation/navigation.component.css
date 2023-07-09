@@ -1,0 +1,9 @@
+@media (max-width: 640px) {
+    .hidden-mobile {
+      display: none;
+    }
+    .visible-mobile {
+      display: block;
+    }
+  }
+  
