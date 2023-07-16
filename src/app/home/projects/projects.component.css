@@ -1,0 +1,53 @@
+.gray-square {
+  width: 40em;
+  height: 30em;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  padding: 2em;
+}
+
+.img-resize {
+  width: 20em; /* Set the desired width */
+  height: auto; /* Set to 'auto' to maintain aspect ratio */
+}
+
+.parent {
+  display: flex;
+  justify-content: center; /* Center the gray squares horizontally */
+  max-width: 7xl;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px; /* Adjust the margin between gray squares */
+}
+
+.stack {
+  flex-direction: column; /* Stacks the squares vertically */
+}
+
+.medium-screen .child {
+  flex: 0 0 auto; /* Prevent the child from growing */
+  width: 50%; /* Adjust the width for medium screens */
+}
+
+.medium-screen .gray-square {
+  width: 30em; /* Adjust the square size for medium screens */
+  height: 30em; /* Adjust the square size for medium screens */
+}
+
+/* Adjust the square size for small screens */
+@media (max-width: 767px) {
+  .gray-square {
+    width: 20em;
+    height: 20em;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-10">
+  <div
+    class="parent flex justify-center"
+    [ngClass]="{ 'text-center': isMobileView }"
+  >
+    <div class="child">
+      <div class="text-left">
+        <h2 class="text-4xl sm:text-4xl font-semibold mb-4">Hey, I'm Zohaib</h2>
+        <p class="text-sm sm:text-base font-sans">
+          I'm a student at Saint Louis University studying Computer Science.
+          Currently looking into full-time opportunities to pursue
+          post-graduation in the coming year. This past summer, I interned at
+          Enterprise as a Java Engineer, gaining significant industry experience
+          I'm planning to apply in my future endeavours.
+        </p>
+      </div>
+    </div>
+    <div
+      class="child flex justify-center"
+      *ngIf="!isMobileView && !isTabletView"
+    >
+      <div class="w-3/5 h-3/5 flex items-center justify-center">
+        <img
+          src="assets/me.jpeg"
+          alt="Zohaib Ahmed"
+          class="rounded-full img-resize"
+        />
+      </div>
+    </div>
+  </div>
+</div>

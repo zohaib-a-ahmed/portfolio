@@ -1,0 +1,20 @@
+.parent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 7xl;
+    margin: 0 auto;
+    padding: 8px;
+  }
+  
+  .child {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img-resize {
+    width: 400px; /* Set the desired width */
+    height: auto; /* Set to 'auto' to maintain aspect ratio */
+  }
+  
