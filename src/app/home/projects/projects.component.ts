@@ -4,6 +4,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 interface Project {
   image: string;
   title: string;
+  subtitle: string;
   description: string;
 }
 
@@ -18,13 +19,15 @@ export class ProjectsComponent {
 
   projects: Project[] = [
     {
-      image: 'assets/me.jpeg',
-      title: 'Project 1',
+      image: 'assets/atlas.png',
+      title: 'Atlas',
+      subtitle: 'A.I. Fitness Trainer',
       description: 'Description of Project 1.',
     },
     {
-      image: 'assets/me.jpeg',
-      title: 'Project 2',
+      image: 'assets/slackchat.jpeg',
+      title: 'Billiken Bot',
+      subtitle: 'SLU Slackbot Assistant',
       description: 'Description of Project 2.',
     },
     // Add more projects as needed

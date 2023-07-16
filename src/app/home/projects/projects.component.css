@@ -1,25 +1,55 @@
-.gray-square {
-  width: 40em;
-  height: 30em;
-  background-color: lightgray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1em;
-  padding: 2em;
-}
-
 .img-resize {
   width: 20em; /* Set the desired width */
   height: auto; /* Set to 'auto' to maintain aspect ratio */
 }
 
-.parent {
+.gray-square {
+  position: relative;
+  width: 40em;
+  height: 40em;
+  background-color: lightgray;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  transition: filter 0.5s, background-color 0.3s;
   display: flex;
-  justify-content: center; /* Center the gray squares horizontally */
-  max-width: 7xl;
-  margin: 0 auto;
-  padding: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gray-square:hover {
+  filter: blur(4px);
+}
+
+.gray-square img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.overlay {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.overlay h1 {
+  margin: 0;
+  padding-top: 0.5em 0;
+  font-size: xx-large;
+}
+
+.overlay h2 {
+  margin: 0;
+  font-size: large;
 }
 
 .child {
@@ -27,8 +57,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 8px; /* Adjust the margin between gray squares */
+  position: relative;
 }
+
+.child:hover .overlay {
+  opacity: 1;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  max-width: 7xl;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+
+
+
 
 .stack {
   flex-direction: column; /* Stacks the squares vertically */
