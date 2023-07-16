@@ -21,7 +21,7 @@ export class ProjectsComponent {
     {
       image: 'assets/atlas.png',
       title: 'Atlas',
-      subtitle: 'A.I. Fitness Trainer',
+      subtitle: 'AI Fitness Trainer',
       description: 'Description of Project 1.',
     },
     {
