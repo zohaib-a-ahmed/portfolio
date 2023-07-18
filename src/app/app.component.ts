@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <main>
       <section class="content">
-        <app-home></app-home>
+        <router-outlet></router-outlet>
       </section>
     </main>
   `,
