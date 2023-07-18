@@ -8,6 +8,7 @@ import { NavigationComponent } from './home/navigation/navigation.component';
 import { AboutComponent } from './home/about/about.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
+import { ProjectsDirectoryComponent } from './projects-directory/projects-directory.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ResumeComponent } from './resume/resume.component';
     AboutComponent,
     ProjectsComponent,
     ResumeComponent,
+    ProjectsDirectoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule], // Add AppRoutingModule to the imports array
   providers: [],

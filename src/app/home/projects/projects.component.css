@@ -1,6 +1,6 @@
 .img-resize {
-  width: 20em; /* Set the desired width */
-  height: auto; /* Set to 'auto' to maintain aspect ratio */
+  width: 20em;
+  height: auto;
 }
 
 .gray-square {
@@ -72,25 +72,20 @@
   padding: 8px;
 }
 
-
-
-
-
 .stack {
-  flex-direction: column; /* Stacks the squares vertically */
+  flex-direction: column;
 }
 
 .medium-screen .child {
-  flex: 0 0 auto; /* Prevent the child from growing */
-  width: 50%; /* Adjust the width for medium screens */
+  flex: 0 0 auto;
+  width: 50%; 
 }
 
 .medium-screen .gray-square {
-  width: 30em; /* Adjust the square size for medium screens */
-  height: 30em; /* Adjust the square size for medium screens */
+  width: 30em;
+  height: 30em;
 }
 
-/* Adjust the square size for small screens */
 @media (max-width: 767px) {
   .gray-square {
     width: 20em;
