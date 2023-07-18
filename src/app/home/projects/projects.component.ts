@@ -19,29 +19,28 @@ export class ProjectsComponent {
 
   projects: Project[] = [
     {
-      image: 'assets/atlas.png',
+      image: 'assets/projects/atlas.png',
       title: 'Atlas',
       subtitle: 'AI Fitness Trainer',
       description: 'Description of Project 1.',
     },
     {
-      image: 'assets/slackchat.jpeg',
+      image: 'assets/projects/slackchat.jpeg',
       title: 'Billiken Bot',
       subtitle: 'SLU Slackbot Assistant',
       description: 'Description of Project 2.',
     },
-    // Add more projects as needed
   ];
 
   constructor(private breakpointObserver: BreakpointObserver) {
     this.breakpointObserver
-      .observe([Breakpoints.XSmall, Breakpoints.Small]) // Define the breakpoints you want to observe
+      .observe([Breakpoints.XSmall, Breakpoints.Small])
       .subscribe((result) => {
         this.isSmallScreen = result.matches;
       });
 
     this.breakpointObserver
-      .observe([Breakpoints.Medium, Breakpoints.TabletLandscape]) // Define the medium breakpoint
+      .observe([Breakpoints.Medium, Breakpoints.TabletLandscape])
       .subscribe((result) => {
         this.isMediumScreen = result.matches;
       });
