@@ -8,7 +8,7 @@
     [class.medium-screen]="isMediumScreen"
   >
     <div class="child" *ngFor="let project of projects">
-      <div class="gray-square">
+      <div class="gray-square" routerLink="/projects">
         <img [src]="project.image" alt="Project Image" class="img-resize" />
       </div>
       <div class="overlay">

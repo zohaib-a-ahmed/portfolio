@@ -1,5 +1,5 @@
 <div class="content">
-  <nav class="bg-black border-b border-white mb-4">
+  <nav class="bg-black border-b border-white">
     <div
       class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16"
     >
@@ -11,4 +11,46 @@
       >
     </div>
   </nav>
+  <div
+    class="project-row flex flex-wrap parent"
+    *ngFor="let project of projects"
+    [ngClass]="{ 'flip-row': project.flip }"
+  >
+    <div
+      class="text-left w-full sm:w-2/3 child"
+      style="min-height: 200px"
+      *ngIf="!project.flip"
+    >
+      <div class="flex flex-col justify-center h-full p-4">
+        <h2 class="text-2xl font-bold">{{ project.title }}</h2>
+        <h3 class="text-lg font-semibold">{{ project.subtitle }}</h3>
+        <p class="mt-2">{{ project.description }}</p>
+      </div>
+    </div>
+    <div
+      class="w-full sm:w-1/3 child gray-square"
+      [ngClass]="{
+        'gray-square-right-fade': project.flip,
+        'gray-square-left-fade': !project.flip
+      }"
+      style="min-height: 200px"
+    >
+      <img
+        [src]="project.image"
+        alt="Project Image"
+        class="w-full rounded-lg img-resize"
+      />
+    </div>
+    <div
+      class="text-left w-full sm:w-2/3 child"
+      style="min-height: 200px"
+      *ngIf="project.flip"
+    >
+      <div class="flex flex-col justify-center h-full p-4">
+        <h2 class="text-2xl font-bold">{{ project.title }}</h2>
+        <h3 class="text-lg font-semibold">{{ project.subtitle }}</h3>
+        <p class="mt-2">{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
 </div>

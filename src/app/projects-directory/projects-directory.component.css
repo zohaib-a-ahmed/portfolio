@@ -1,0 +1,64 @@
+  .img-resize {
+    width: 20em;
+    height: auto;
+  }
+
+  .parent {
+    display: flex;
+    max-width: 7xl;
+  }
+  
+  .child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 4em;
+  }
+
+  .gray-square {
+    position: relative;
+    width: 30em;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+  }
+  
+  .gray-square::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white);
+  }
+  
+  .gray-square::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  }
+  
+  .gray-square-right-fade {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      white
+    );
+    background-size: 30px 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  
+  .gray-square-left-fade {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    background-size: 30px 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
