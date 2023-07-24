@@ -19,7 +19,7 @@ export class ProjectsDirectoryComponent {
       title: 'Billiken Bot',
       subtitle: 'SLU Slackbot Assistant',
       description:
-        'In vitae magna diam. Aenean ultricies metus non sapien vestibulum, vel tristique justo pulvinar. Maecenas vel enim malesuada urna bibendum iaculis. Vivamus tempus, purus ac venenatis vehicula, sem dolor pharetra nibh, ac egestas ex sapien sed orci. Ut odio neque, pellentesque a tempor id, viverra porttitor velit. Vivamus sagittis nulla ante, id dictum est facilisis sit amet. Aliquam ut semper metus. Nam sit amet sapien vel nunc feugiat ornare sit amet eu leo. Proin blandit elementum laoreet. Etiam pretium aliquet arcu nec lacinia. Etiam imperdiet feugiat tempus. Sed ut egestas augue. Proin vitae velit diam. Suspendisse quam augue, consequat eget arcu id, luctus mattis nibh. Duis finibus, felis in congue mollis, arcu lacus ornare justo, quis convallis ante quam ac lorem. Aliquam dignissim in ligula nec feugiat.',
+        'In vitae magna diam. Vivamus tempus, purus ac venenatis vehicula, sem dolor pharetra nibh, ac egestas ex sapien sed orci. Ut odio neque, pellentesque a tempor id, viverra porttitor velit. Vivamus sagittis nulla ante, id dictum est facilisis sit amet. Aliquam ut semper metus. Nam sit amet sapien vel nunc feugiat ornare sit amet eu leo. Proin blandit elementum laoreet. Etiam pretium aliquet arcu nec lacinia. Etiam imperdiet feugiat tempus. Sed ut egestas augue. Proin vitae velit diam. Suspendisse quam augue, consequat eget arcu id, luctus mattis nibh. Duis finibus, felis in congue mollis, arcu lacus ornare justo, quis convallis ante quam ac lorem. Aliquam dignissim in ligula nec feugiat.',
       image: 'assets/projects/slackchat.jpeg',
       flip: true,
     },

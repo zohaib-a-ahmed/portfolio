@@ -9,6 +9,7 @@ import { AboutComponent } from './home/about/about.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectsDirectoryComponent } from './projects-directory/projects-directory.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ProjectsDirectoryComponent } from './projects-directory/projects-direct
     ProjectsComponent,
     ResumeComponent,
     ProjectsDirectoryComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule], // Add AppRoutingModule to the imports array
   providers: [],

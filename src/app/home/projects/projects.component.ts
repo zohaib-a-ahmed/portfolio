@@ -5,7 +5,6 @@ interface Project {
   image: string;
   title: string;
   subtitle: string;
-  description: string;
 }
 
 @Component({
@@ -22,13 +21,11 @@ export class ProjectsComponent {
       image: 'assets/projects/atlas.png',
       title: 'Atlas',
       subtitle: 'AI Fitness Trainer',
-      description: 'Description of Project 1.',
     },
     {
       image: 'assets/projects/slackchat.jpeg',
       title: 'Billiken Bot',
       subtitle: 'SLU Slackbot Assistant',
-      description: 'Description of Project 2.',
     },
   ];
 

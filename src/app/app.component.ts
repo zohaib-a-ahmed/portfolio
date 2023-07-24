@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
       <section class="content">
         <router-outlet></router-outlet>
       </section>
+      <app-footer></app-footer>
     </main>
   `,
 })
