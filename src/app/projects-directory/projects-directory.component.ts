@@ -1,25 +1,41 @@
 import { Component } from '@angular/core';
 
+interface Project {
+  image: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  flip: boolean;
+  link?: string;
+}
+
 @Component({
   selector: 'app-projects-directory',
   templateUrl: './projects-directory.component.html',
   styleUrls: ['./projects-directory.component.css'],
 })
 export class ProjectsDirectoryComponent {
-  projects: any[] = [
+  projects: Project[] = [
     {
       title: 'Atlas',
       subtitle: 'AI Fitness Trainer',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam velit dui, posuere   eu, suscipit vehicula ex. Mauris scelerisque diam vel scelerisque sollicitudin. Maecenas magna turpis, tempus quis fermentum vel, rutrum quis nulla. Ut congue nisl et dui laoreet, sed ullamcorper arcu rutrum. Donec nec egestas lorem, quis pretium mi. Ut aliquet sed orci id consequat. Nulla suscipit enim eget neque iaculis, et porta nisi pellentesque. Proin a dignissim lacus.',
+      description: `
+      My first "passion project". One of my hobbies is weightlifting and fitness and I wanted to learn web development with UI frameworks, so I created Atlas.
+      Atlas is a full-stack web application that provides exercise and nutrition advice via a GPT-powered chatbot. I leveraged Next.js and Bootstrap for a streamlined infrastructure 
+      that simulates a conversation with a personal trainer. 
+      `,
       image: 'assets/projects/atlas.png',
       flip: false,
+      link: 'https://github.com/zohaib-a-ahmed/trainerPT',
     },
     {
       title: 'Billiken Bot',
       subtitle: 'SLU Slackbot Assistant',
-      description:
-        'In vitae magna diam. Vivamus tempus, purus ac venenatis vehicula, sem dolor pharetra nibh, ac egestas ex sapien sed orci. Ut odio neque, pellentesque a tempor id, viverra porttitor velit. Vivamus sagittis nulla ante, id dictum est facilisis sit amet. Aliquam ut semper metus. Nam sit amet sapien vel nunc feugiat ornare sit amet eu leo. Proin blandit elementum laoreet. Etiam pretium aliquet arcu nec lacinia. Etiam imperdiet feugiat tempus. Sed ut egestas augue. Proin vitae velit diam. Suspendisse quam augue, consequat eget arcu id, luctus mattis nibh. Duis finibus, felis in congue mollis, arcu lacus ornare justo, quis convallis ante quam ac lorem. Aliquam dignissim in ligula nec feugiat.',
+      description: `
+      In one of my courses, CSCI-3300: Software Engineering, my group was tasked to create a SLU-oriented, professional Slack assistant. Following a strict Agile development cycle, 
+      consisting of a Kanban board, stand-ups, sprints, retros, etc. we developed Billiken Bot. Billiken Bot can scrape the web for SLU-centric news, dining, finals schedules, and building/office hours
+      in addition to managing users' schedules and reminders. The application is written in Python utilizing the Slack API and SQLite for data management along with a Gitlab CI/CD pipeline written with Pytest. 
+      `,
       image: 'assets/projects/slackchat.jpeg',
       flip: true,
     },
