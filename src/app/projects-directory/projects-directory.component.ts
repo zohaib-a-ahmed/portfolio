@@ -50,9 +50,7 @@ export class ProjectsDirectoryComponent {
 
   ngOnInit() {
     this.breakpointSubscription = this.breakpointObserver
-      .observe([
-        Breakpoints.XSmall, // Target only cell phones
-      ])
+      .observe([Breakpoints.XSmall])
       .subscribe((result) => {
         this.isMobileView = result.breakpoints[Breakpoints.XSmall];
       });

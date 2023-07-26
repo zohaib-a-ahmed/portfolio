@@ -1,13 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ResumeComponent } from './resume/resume.component'; // Import the ResumeComponent
+import { ResumeComponent } from './resume/resume.component';
 import { ProjectsDirectoryComponent } from './projects-directory/projects-directory.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }, // Default route, HomeComponent is the main page
-  { path: 'resume', component: ResumeComponent }, // Route for ResumeComponent
-  { path: 'projects', component: ProjectsDirectoryComponent },
+  { path: '', component: HomeComponent, title: 'Home | Zohaib Ahmed' },
+  {
+    path: 'resume',
+    component: ResumeComponent,
+    title: 'Resume | Zohaib Ahmed',
+  },
+  {
+    path: 'projects',
+    component: ProjectsDirectoryComponent,
+    title: 'Projects | Zohaib Ahmed',
+  },
 ];
 
 @NgModule({
