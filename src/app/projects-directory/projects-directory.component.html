@@ -11,53 +11,74 @@
       >
     </div>
   </nav>
-  <div
-    class="project-row flex flex-wrap parent"
-    *ngFor="let project of projects"
-    [ngClass]="{ 'flip-row': project.flip }"
-  >
+  <div class="horizontal-view" *ngIf="!isMobileView">
     <div
-      class="text-left w-full sm:w-2/3 child"
-      style="min-height: 200px"
-      *ngIf="!project.flip"
+      class="project-row flex flex-wrap parent"
+      *ngFor="let project of projects"
+      [ngClass]="{ 'flip-row': project.flip }"
     >
-      <div class="flex flex-col justify-center h-full p-4">
-        <h2 class="text-2xl font-bold">{{ project.title }}</h2>
-        <h3 class="text-lg font-semibold">{{ project.subtitle }}</h3>
-        <p class="mt-2">{{ project.description }}</p>
-        <div *ngIf="project.link">
-          <p class="mt-6">
-            Check out the repository
-            <a class="font-bold" [href]="project.link" target="_blank">here</a>
-          </p>
+      <div
+        class="text-left w-full sm:w-2/3 child"
+        style="min-height: 200px"
+        *ngIf="!project.flip"
+      >
+        <div class="flex flex-col justify-center h-full p-4">
+          <h2 class="text-2xl font-bold">{{ project.title }}</h2>
+          <h3 class="text-lg font-semibold">{{ project.subtitle }}</h3>
+          <p class="mt-2">{{ project.description }}</p>
+          <div *ngIf="project.link">
+            <p class="mt-6">
+              Check out the repository
+              <a class="font-bold" [href]="project.link" target="_blank"
+                >here</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full sm:w-1/3 child gray-square"
+        [ngClass]="{
+          'gray-square-right-fade': project.flip,
+          'gray-square-left-fade': !project.flip
+        }"
+        style="min-height: 200px"
+      >
+        <img
+          [src]="project.image"
+          alt="Project Image"
+          class="w-full rounded-lg img-resize"
+        />
+      </div>
+      <div
+        class="text-left w-full sm:w-2/3 child"
+        style="min-height: 200px"
+        *ngIf="project.flip"
+      >
+        <div class="flex flex-col justify-center h-full p-4">
+          <h2 class="text-2xl font-bold">{{ project.title }}</h2>
+          <h3 class="text-lg font-semibold">{{ project.subtitle }}</h3>
+          <p class="mt-2">{{ project.description }}</p>
+          <div *ngIf="project.link">
+            <p class="mt-3">
+              Check out the repository <a [href]="project.link">here</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div
-      class="w-full sm:w-1/3 child gray-square"
-      [ngClass]="{
-        'gray-square-right-fade': project.flip,
-        'gray-square-left-fade': !project.flip
-      }"
-      style="min-height: 200px"
-    >
-      <img
-        [src]="project.image"
-        alt="Project Image"
-        class="w-full rounded-lg img-resize"
-      />
-    </div>
-    <div
-      class="text-left w-full sm:w-2/3 child"
-      style="min-height: 200px"
-      *ngIf="project.flip"
-    >
-      <div class="flex flex-col justify-center h-full p-4">
-        <h2 class="text-2xl font-bold">{{ project.title }}</h2>
-        <h3 class="text-lg font-semibold">{{ project.subtitle }}</h3>
-        <p class="mt-2">{{ project.description }}</p>
+  </div>
+  <div class="mobile flex flex-col" *ngIf="isMobileView">
+    <div class="project-row" *ngFor="let project of projects">
+      <div class="gray-square">
+        <img [src]="project.image" alt="Project Image" class="img-resize" />
+      </div>
+      <div class="project-details">
+        <h2 class="text-base font-bold">{{ project.title }}</h2>
+        <h3 class="text-sm font-semibold">{{ project.subtitle }}</h3>
+        <p class="mt-2 text-sm">{{ project.description }}</p>
         <div *ngIf="project.link">
-          <p class="mt-3">
+          <p class="mt-3 text-sm">
             Check out the repository <a [href]="project.link">here</a>
           </p>
         </div>

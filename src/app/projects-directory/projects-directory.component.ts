@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Subscription } from 'rxjs';
 
 interface Project {
   image: string;
@@ -40,4 +42,23 @@ export class ProjectsDirectoryComponent {
       flip: true,
     },
   ];
+
+  isMobileView = false;
+  private breakpointSubscription: Subscription = new Subscription();
+
+  constructor(private breakpointObserver: BreakpointObserver) {}
+
+  ngOnInit() {
+    this.breakpointSubscription = this.breakpointObserver
+      .observe([
+        Breakpoints.XSmall, // Target only cell phones
+      ])
+      .subscribe((result) => {
+        this.isMobileView = result.breakpoints[Breakpoints.XSmall];
+      });
+  }
+
+  ngOnDestroy() {
+    this.breakpointSubscription.unsubscribe();
+  }
 }

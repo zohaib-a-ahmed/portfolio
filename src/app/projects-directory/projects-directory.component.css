@@ -3,6 +3,11 @@
     height: auto;
   }
 
+  .mobile .img-resize {
+    width: 10em;
+    height: auto;
+  }
+
   .parent {
     display: flex;
     max-width: 7xl;
@@ -12,7 +17,6 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    padding: 4em;
   }
 
   .gray-square {
@@ -24,8 +28,20 @@
     justify-content: center;
     background-color: lightgray;
   }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile .gray-square {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 15em;
+  }
   
-  .gray-square::before {
+  .horizontal-view .gray-square::before {
     content: '';
     position: absolute;
     top: 0;
@@ -44,8 +60,20 @@
     height: 10px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
   }
+
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 1.5em;
+  }  
+
+  .mobile .gray-square::after {
+    height: 20px;
+  }
   
-  .gray-square-right-fade {
+  .horizontal-view .gray-square-right-fade {
     background-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 0),
@@ -56,7 +84,7 @@
     background-position: right top;
   }
   
-  .gray-square-left-fade {
+  .horizontal-view .gray-square-left-fade {
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white);
     background-size: 30px 100%;
     background-repeat: no-repeat;
