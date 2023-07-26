@@ -1,0 +1,18 @@
+/* app.component.css */
+
+/* Sticky footer styles */
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .app-footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  

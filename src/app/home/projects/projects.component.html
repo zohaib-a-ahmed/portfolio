@@ -10,6 +10,7 @@
     class="parent"
     [class.stack]="isSmallScreen"
     [class.medium-screen]="isMediumScreen"
+    [class.large-screen]="isLargeScreen"
   >
     <div class="child" *ngFor="let project of projects">
       <div class="gray-square" routerLink="/projects">

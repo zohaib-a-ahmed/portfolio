@@ -87,9 +87,20 @@
   height: 30em;
 }
 
+.large-screen .child {
+  flex: 0 0 auto;
+  width: 50%; 
+}
+
+.large-screen .gray-square {
+  width: 50em;
+  height: 40em;
+}
+
 @media (max-width: 767px) {
   .gray-square {
     width: 20em;
     height: 20em;
   }
 }
+

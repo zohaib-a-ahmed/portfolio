@@ -15,6 +15,7 @@ interface Project {
 export class ProjectsComponent {
   isSmallScreen = false;
   isMediumScreen = false;
+  isLargeScreen = false;
 
   projects: Project[] = [
     {
@@ -40,6 +41,12 @@ export class ProjectsComponent {
       .observe([Breakpoints.Medium, Breakpoints.TabletLandscape])
       .subscribe((result) => {
         this.isMediumScreen = result.matches;
+      });
+
+    this.breakpointObserver
+      .observe([Breakpoints.XLarge])
+      .subscribe((result) => {
+        this.isLargeScreen = result.matches;
       });
   }
 }
