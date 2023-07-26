@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
     <main>
-      <section class="content">
+      <section class="content font-sans">
         <router-outlet></router-outlet>
       </section>
       <app-footer></app-footer>
