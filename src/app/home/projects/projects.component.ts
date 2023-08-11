@@ -24,9 +24,9 @@ export class ProjectsComponent {
       subtitle: 'AI Fitness Trainer',
     },
     {
-      image: 'assets/projects/slackchat.jpeg',
-      title: 'Billiken Bot',
-      subtitle: 'SLU Slackbot Assistant',
+      image: 'assets/projects/researchGPT.png',
+      title: 'researchGPT',
+      subtitle: 'ML Research Assistant',
     },
   ];
 
