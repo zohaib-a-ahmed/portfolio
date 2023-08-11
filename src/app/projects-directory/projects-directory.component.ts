@@ -19,6 +19,19 @@ interface Project {
 export class ProjectsDirectoryComponent {
   projects: Project[] = [
     {
+      title: 'researchGPT',
+      subtitle: 'ML Research Assistant',
+      description: `
+      researchGPT is a small project I made to begin familiarizing myself with large language models (LLMs). The application is a small chat interface with an autonomous agent,
+       designed to find research on a given topic and provide QA over it. Its merits come with the ability to autonomously search for related articles, vectorize them, and reference them 
+      in a conversation. The application is built using the Langchain framework, queries the Semantic Scholar database for research, and utilizes GPT-3.5 for processing. This is all bootstrapped 
+      onto the Chainlit UI for easy deployment. 
+      `,
+      image: 'assets/projects/researchGPT.png',
+      flip: false,
+      link: 'https://github.com/zohaib-a-ahmed/researchGPT',
+    },
+    {
       title: 'Atlas',
       subtitle: 'AI Fitness Trainer',
       description: `
@@ -27,7 +40,7 @@ export class ProjectsDirectoryComponent {
       that simulates a conversation with a personal trainer. 
       `,
       image: 'assets/projects/atlas.png',
-      flip: false,
+      flip: true,
       link: 'https://github.com/zohaib-a-ahmed/trainerPT',
     },
     {
@@ -39,7 +52,7 @@ export class ProjectsDirectoryComponent {
       in addition to managing users' schedules and reminders. The application is written in Python utilizing the Slack API and SQLite for data management along with a Gitlab CI/CD pipeline written with Pytest. 
       `,
       image: 'assets/projects/slackchat.jpeg',
-      flip: true,
+      flip: false,
     },
   ];
 
