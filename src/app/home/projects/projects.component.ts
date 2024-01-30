@@ -19,14 +19,14 @@ export class ProjectsComponent {
 
   projects: Project[] = [
     {
-      image: 'assets/projects/atlas.png',
-      title: 'Atlas',
-      subtitle: 'AI Fitness Trainer',
+      image: 'assets/projects/priorify.png',
+      title: 'Priorify',
+      subtitle: 'Productivity Manager Web App',
     },
     {
       image: 'assets/projects/researchGPT.png',
       title: 'researchGPT',
-      subtitle: 'ML Research Assistant',
+      subtitle: 'LLM Research Assistant',
     },
   ];
 

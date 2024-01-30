@@ -19,8 +19,20 @@ interface Project {
 export class ProjectsDirectoryComponent {
   projects: Project[] = [
     {
+      title: 'Priorify',
+      subtitle: 'Productivity Manager Web App',
+      description: `
+      Priorify is an application I developed for myself and some of my peers that allows users to manage their own upcoming events and assignments. It was developed to refresh my practice with full-stack applications, 
+      and be something I can utilize for my last semester in college. The application is divided into two parts. The frontend is served with NextJS and Mantine/TailwindCSS styling that provides an intuitive UI and provides OAuth authentication with Google. 
+      The backend uses the Flask framework to serve a RESTful API that manages Supabase's PostgreSQL database storing user calendars. 
+      `,
+      image: 'assets/projects/priorify.png',
+      flip: false,
+      link: 'https://github.com/zohaib-a-ahmed/priorify',
+    },
+    {
       title: 'researchGPT',
-      subtitle: 'ML Research Assistant',
+      subtitle: 'LLM Research Assistant',
       description: `
       researchGPT is a small project I made to begin familiarizing myself with large language models (LLMs). The application is a small chat interface with an autonomous agent,
        designed to find research on a given topic and provide QA over it. Its merits come with the ability to autonomously search for related articles, vectorize them, and reference them 
@@ -28,7 +40,7 @@ export class ProjectsDirectoryComponent {
       onto the Chainlit UI for easy deployment. 
       `,
       image: 'assets/projects/researchGPT.png',
-      flip: false,
+      flip: true,
       link: 'https://github.com/zohaib-a-ahmed/researchGPT',
     },
     {
@@ -40,7 +52,7 @@ export class ProjectsDirectoryComponent {
       that simulates a conversation with a personal trainer. 
       `,
       image: 'assets/projects/atlas.png',
-      flip: true,
+      flip: false,
       link: 'https://github.com/zohaib-a-ahmed/trainerPT',
     },
     {
@@ -52,7 +64,7 @@ export class ProjectsDirectoryComponent {
       in addition to managing users' schedules and reminders. The application is written in Python utilizing the Slack API and SQLite for data management along with a Gitlab CI/CD pipeline written with Pytest. 
       `,
       image: 'assets/projects/slackchat.jpeg',
-      flip: false,
+      flip: true,
     },
   ];
 
