@@ -63,7 +63,7 @@ export class ProjectsDirectoryComponent {
       consisting of a Kanban board, stand-ups, sprints, retros, etc. we developed Billiken Bot. Billiken Bot can scrape the web for SLU-centric news, dining, finals schedules, and building/office hours
       in addition to managing users' schedules and reminders. The application is written in Python utilizing the Slack API and SQLite for data management along with a Gitlab CI/CD pipeline written with Pytest. 
       `,
-      image: 'assets/projects/slackchat.jpeg',
+      image: 'assets/projects/slackchat.png',
       flip: true,
     },
   ];
