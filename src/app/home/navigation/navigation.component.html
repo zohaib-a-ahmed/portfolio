@@ -1,35 +1,45 @@
-<nav class="bg-black border-b border-white">
-  <div
-    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16"
-  >
-    <div class="font-bold text-2xl text-white mr-6">ZA</div>
-    <div class="hidden sm:flex items-center space-x-20 mr-20">
+<nav class="bg-white border-gray-800">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+    <div class="border-2 border-gray-800 rounded-lg px-2 py-1">
+      <span class="font-bold text-2xl text-gray-800">ZA</span>
+    </div>
+    <div class="hidden sm:flex items-center space-x-20 mr-">
       <a
         routerLink="/resume"
-        class="text-white hover:text-gray-400 hover:font-bold font-semibold ml-4"
+        class="text-black fw-200 p-1 hover:border-2 hover:border-gray-800 hover:rounded-lg font-semibold ml-4"
         >Resume</a
       >
       <a
         routerLink="/projects"
-        class="text-white hover:text-gray-400 hover:font-bold font-semibold ml-4"
+        class="text-black fw-200 p-1 hover:border-2 hover:border-gray-800 hover:rounded-lg font-semibold ml-4"
+
         >Projects</a
+      >
+      <a
+      href="https://github.com/zohaib-a-ahmed"
+      target="_blank"
+      class="text-black fw-200 p-1 hover:border-2 hover:border-gray-800 hover:rounded-lg font-semibold ml-4"
+
+      >GitHub</a
       >
       <a
         href="https://www.linkedin.com/in/zohaibaahmed/"
         target="_blank"
-        class="text-white hover:text-gray-400 hover:font-bold font-semibold ml-4"
+        class="text-black fw-200 p-1 hover:border-2 hover:border-gray-800 hover:rounded-lg font-semibold ml-4"
+
         >LinkedIn</a
       >
       <a
         href="mailto:zohaib.ahmed@slu.edu"
-        class="text-white hover:text-gray-400 hover:font-bold font-semibold ml-4"
+        class="text-black fw-200 p-1 hover:border-2 hover:border-gray-800 hover:rounded-lg font-semibold ml-4"
+
         >Contact Me</a
       >
     </div>
     <div class="sm:hidden flex items-center">
       <button
         type="button"
-        class="inline-flex items-center justify-center p-2 text-white hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+        class="inline-flex items-center justify-center p-2 text-black fw-200 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
         (click)="toggleMobileMenu()"
       >
         <span class="sr-only">Open main menu</span>
@@ -57,28 +67,33 @@
         >
           <a
             routerLink="/"
-            class="text-black hover:text-gray-400 hover:font-bold font-semibold mb-8"
+            class="text-black fw-200 hover:text-gray-400 hover:font-bold font-semibold mb-8"
             (click)="closeMobileMenu()"
             >Home</a
           >
           <a
             routerLink="/resume"
-            class="text-black hover:text-gray-400 hover:font-bold font-semibold mb-8"
+            class="text-black fw-200 hover:text-gray-400 hover:font-bold font-semibold mb-8"
             >Resume</a
           >
           <a
             routerLink="/projects"
-            class="text-black hover:text-gray-400 hover:font-bold font-semibold mb-8"
+            class="text-black fw-200 hover:text-gray-400 hover:font-bold font-semibold mb-8"
             >Projects</a
           >
           <a
+            href="https://github.com/zohaib-a-ahmed"
+            class="text-black fw-200 hover:text-gray-400 hover:font-bold font-semibold mb-8"
+            >GitHub</a
+          >
+          <a
             href="https://www.linkedin.com/in/zohaibazherahmed/"
-            class="text-black hover:text-gray-400 hover:font-bold font-semibold mb-8"
+            class="text-black fw-200 hover:text-gray-400 hover:font-bold font-semibold mb-8"
             >LinkedIn</a
           >
           <a
             href="mailto:zohaib.ahmed@slu.edu"
-            class="text-black hover:text-gray-400 hover:font-bold font-semibold mb-8"
+            class="text-black fw-200 hover:text-gray-400 hover:font-bold font-semibold mb-8"
             >Contact Me</a
           >
         </div>
